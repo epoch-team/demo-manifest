@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: catalogue
-        image: epoch-team/demo-app/demo_catalogue_image
+        image: epochdemo/demo_catalogue_image
         #image: weaveworksdemos/catalogue:0.3.5
         #env:
         #- name: ZIPKIN

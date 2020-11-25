@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: catalogue-db
-        image: epoch-team/demo-app/demo_cataloguedb_image
+        image: epochdemo/demo_cataloguedb_image
         env:
           - name: MYSQL_USER
             value: catalogue_user
