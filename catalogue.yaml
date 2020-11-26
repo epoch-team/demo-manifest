@@ -20,10 +20,6 @@ spec:
         imagePullPolicy: Always
         ports:
         - containerPort: 80
-        securityContext:
-          privileged: true
-          allowPrivilegeEscalation: true
-          runAsUser: 0
       imagePullSecrets:
         - name: docker-catalogue
       nodeSelector:
