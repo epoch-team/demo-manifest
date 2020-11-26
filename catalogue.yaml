@@ -17,12 +17,11 @@ spec:
       containers:
       - name: catalogue
         image: epochdemo/demo_catalogue_image
-        #image: weaveworksdemos/catalogue:0.3.5
-        #env:
-        #- name: ZIPKIN
-        #  value: http://zipkin:9411/api/v1/spans
+        imagePullPolicy: Always
         ports:
         - containerPort: 80
+      imagePullSecrets:
+        - name: docker-catalogue
       nodeSelector:
         beta.kubernetes.io/os: linux
 ---
