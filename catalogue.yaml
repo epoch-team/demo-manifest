@@ -2,10 +2,11 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: catalogue
+  namespace: demo-app
   labels:
     name: catalogue
 spec:
-  replicas: 1
+  replicas: 10
   selector:
     matchLabels:
       name: catalogue
@@ -19,7 +20,7 @@ spec:
         image: epochdemo/demo_catalogue_image:latest
         env:
         - name: test_time
-          value: "20201215_1019"
+          value: "202012160953"
         #image: weaveworksdemos/catalogue:0.3.5
         #env:
         #- name: ZIPKIN
@@ -33,6 +34,7 @@ apiVersion: v1
 kind: Service
 metadata:
   name: catalogue
+  namespace: demo-app
   labels:
     name: catalogue
 spec:
