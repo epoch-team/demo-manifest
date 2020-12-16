@@ -20,7 +20,7 @@ spec:
         image: epochdemo/demo_catalogue_image:latest
         env:
         - name: test_time
-          value: "202012160953"
+          value: "202012161346"
         #image: weaveworksdemos/catalogue:0.3.5
         #env:
         #- name: ZIPKIN
