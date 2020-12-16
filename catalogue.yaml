@@ -2,7 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: catalogue
-  namespace: demo-app
+#  namespace: demo-app
   labels:
     name: catalogue
 spec:
@@ -34,7 +34,7 @@ apiVersion: v1
 kind: Service
 metadata:
   name: catalogue
-  namespace: demo-app
+#  namespace: demo-app
   labels:
     name: catalogue
 spec:
